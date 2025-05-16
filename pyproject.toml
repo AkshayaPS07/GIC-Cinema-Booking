@@ -1,0 +1,26 @@
+[project]
+name = "GIC_cinemas_booking_system"
+version = "0.1.0"
+description = "Cinema booking system"
+authors = [
+    {name = "Akshaya PS", email = "akshaya.sobanaraj07@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.7"
+
+[tool.poetry]
+packages = [
+    { include = "src" },
+    { include = "resources" },
+    { include = "tests" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
